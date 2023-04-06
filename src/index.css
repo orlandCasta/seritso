@@ -1,0 +1,697 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --black-gradient: linear-gradient(
+    144.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+  --card-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+.text-gradient {
+  background-image: linear-gradient(to top right, #dbf8d6, #61bc55);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.bg-blue-gradient {
+  background-image: linear-gradient(to top right, #b2dbab, #61bc55);
+}
+
+.bg-black-gradient {
+  background: linear-gradient(
+    144.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+}
+
+.bg-black-gradient-2 {
+  background: linear-gradient(
+    -168.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+}
+
+.bg-gray-gradient {
+  background: linear-gradient(
+    153.47deg,
+    rgba(255, 255, 255, 0) -341.94%,
+    #14101d 95.11%
+  );
+}
+
+.bg-discount-gradient {
+  background: linear-gradient(125.17deg, #272727 0%, #11101d 100%);
+}
+
+.box-shadow {
+  box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+}
+
+.sidebar {
+  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+/* Seccion de servicios */
+
+.card {
+  border-radius: 20px;
+  padding: 25px;
+  width: 300px;
+  min-width: 300px;
+  margin: 0 auto;
+  color: white;
+  border: #a7b0b450 1px solid;
+  margin-bottom: 15px;
+}
+
+.card h2 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+  margin-bottom: 50px;
+}
+
+.card .card-list-element {
+  color: #a7b0b4;
+}
+
+.card .card-list-subtitle {
+  margin: 10px 0 10px 0;
+}
+
+.card:hover {
+  background: var(--black-gradient);
+  border: #1d1c27 1px solid;
+}
+
+/* Form */
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+.main-contact-form .contact-form_list li {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  height: 100px;
+}
+
+.main-contact-form .contact-form_list input {
+  border: 0.1rem solid #bdbdbd;
+  border-radius: 0.5rem;
+  height: 3.5rem;
+  width: 500px;
+  padding: 10px;
+  color: #000000;
+}
+
+/* Form - Dual inputs */
+
+.dual-input-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.dual-input-container .dual-input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.dual-input-1 {
+  margin-right: 15px;
+}
+
+.dual-input-container .dual-input input {
+  border: 0.1rem solid #bdbdbd;
+  border-radius: 0.5rem;
+  height: 3.5rem;
+  width: 100%;
+}
+
+input:focus,
+input:active {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.main-contact-form button {
+  margin-top: 20px;
+  width: 500px;
+  height: 3.5rem;
+  border-radius: 0.5rem;
+  background-color: #33bbcf;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1.2rem;
+  border: none;
+}
+
+.contact-section {
+  background: linear-gradient(
+    -168.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+}
+
+/* Gradients */
+
+.blue__gradient {
+  background: linear-gradient(
+    180deg,
+    rgba(188, 165, 255, 0) 0%,
+    #61bc5580 100%
+  );
+  filter: blur(123px);
+}
+
+.pink__gradient {
+  background: linear-gradient(90deg, #f4c4f3 0%, #fc67fa 100%);
+  filter: blur(900px);
+}
+
+.white__gradient {
+  background: rgba(255, 255, 255, 0.6);
+  filter: blur(750px);
+}
+
+/* Others */
+
+.text-hover:hover {
+  color: #62ce54;
+}
+
+.benefits.button-benefits {
+  color: white;
+}
+
+.form-text-error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.navbar li:hover {
+  animation-name: pintar;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  color: white;
+}
+
+@keyframes pintar {
+  from {
+    border-bottom-color: transparent;
+  }
+  to {
+    border-bottom: 0.1rem solid #61bc55;
+  }
+}
+
+.button-hover:hover {
+  background: #61bc55;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Media querys */
+
+@media (max-width: 480px) and (min-width: 0px) {
+  /* Agrega aquí tus estilos CSS para dispositivos móviles */
+
+  /* Form */
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    background-color: #ffffff;
+    border-radius: 20px;
+  }
+
+  .main-contact-form .contact-form_list input {
+    border: 0.1rem solid #bdbdbd;
+    border-radius: 0.5rem;
+    height: 3.5rem;
+    width: 300px;
+    padding: 10px;
+    color: #000000;
+  }
+
+  .dual-input-container .dual-input input {
+    border: 0.1rem solid #bdbdbd;
+    border-radius: 0.5rem;
+    height: 3.5rem;
+    width: 100%;
+  }
+
+  input:focus,
+  input:active {
+    border: none;
+    outline: none;
+    background: none;
+  }
+
+  .main-contact-form button {
+    margin-top: 20px;
+    width: 300px;
+    height: 3.5rem;
+    border-radius: 0.5rem;
+    background-color: #33bbcf;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1.2rem;
+    border: none;
+  }
+
+  .contact-first-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 170%;
+
+    border-radius: 20px;
+    padding: 65px;
+    background: linear-gradient(
+      -168.39deg,
+      #ffffff -278.56%,
+      #6d6d6d -78.47%,
+      #11101d 91.61%
+    );
+  }
+
+  .contact-section {
+    background: transparent;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  /* Agrega aquí tus estilos CSS para tablets */
+
+  /* Form */
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    margin-bottom: 25px;
+  }
+
+  .main-contact-form .contact-form_list input {
+    border: 0.1rem solid #bdbdbd;
+    border-radius: 0.5rem;
+    height: 3.5rem;
+    width: 100%;
+    padding: 10px;
+    color: #000000;
+  }
+
+  .dual-input label {
+    font-size: 0.9rem;
+  }
+
+  .dual-input-container .dual-input input {
+    border: 0.1rem solid #bdbdbd;
+    border-radius: 0.5rem;
+    height: 3.5rem;
+    width: 100%;
+  }
+
+  input:focus,
+  input:active {
+    border: none;
+    outline: none;
+    background: none;
+  }
+
+  .main-contact-form button {
+    margin-top: 20px;
+    width: 95%;
+    height: 3.5rem;
+    border-radius: 0.5rem;
+    background-color: #33bbcf;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1.2rem;
+    border: none;
+  }
+
+  .contact-first-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-section {
+    background: linear-gradient(
+      -168.39deg,
+      #ffffff -278.56%,
+      #6d6d6d -78.47%,
+      #11101d 91.61%
+    );
+  }
+
+  /* Service card */
+
+  .card {
+    margin: 10px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Agrega aquí tus estilos CSS para dispositivos pequeños o medianos */
+
+  /* Form */
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    background-color: #ffffff;
+    border-radius: 20px;
+  }
+
+  .main-contact-form .contact-form_list input {
+    border: 0.1rem solid #bdbdbd;
+    border-radius: 0.5rem;
+    height: 3.5rem;
+    width: auto;
+    padding: 10px;
+    color: #000000;
+  }
+
+  .dual-input-container .dual-input input {
+    border: 0.1rem solid #bdbdbd;
+    border-radius: 0.5rem;
+    height: 3.5rem;
+    width: 100%;
+  }
+
+  input:focus,
+  input:active {
+    border: none;
+    outline: none;
+    background: none;
+  }
+
+  .main-contact-form button {
+    margin-top: 20px;
+    width: 97%;
+    height: 3.5rem;
+    border-radius: 0.5rem;
+    background-color: #33bbcf;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1.2rem;
+    border: none;
+  }
+
+  .contact-first-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .contact-second-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  #contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-contact-form ul {
+    width: 100%;
+  }
+
+  /* Service card */
+
+  .card {
+    margin: 10px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  /* Agrega aquí tus estilos CSS para pantallas medianas o grandes */
+
+  /* Form */
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: auto;
+    padding: 50px;
+    background-color: #ffffff;
+    border-radius: 20px;
+  }
+
+  .main-contact-form .contact-form_list input {
+    border: 0.1rem solid #bdbdbd;
+    border-radius: 0.5rem;
+    height: 3.5rem;
+    width: auto;
+    padding: 10px;
+    color: #000000;
+  }
+
+  .dual-input-container .dual-input input {
+    border: 0.1rem solid #bdbdbd;
+    border-radius: 0.5rem;
+    height: 3.5rem;
+    width: 100%;
+  }
+
+  input:focus,
+  input:active {
+    border: none;
+    outline: none;
+    background: none;
+  }
+
+  .main-contact-form button {
+    margin-top: 20px;
+    width: 95%;
+    height: 3.5rem;
+    border-radius: 0.5rem;
+    background-color: #33bbcf;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1.2rem;
+    border: none;
+  }
+
+  .contact-first-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .contact-second-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-left: 25px;
+  }
+
+  #contact-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-contact-form ul {
+    width: 100%;
+  }
+
+  .main-contact-form label {
+    font-size: 0.8rem;
+  }
+
+  /* Service card */
+
+  .card {
+    margin: 10px;
+    width: 40%;
+  }
+}
+
+@media (min-width: 1281px) and (max-width: 1440px) {
+  /* Agrega aquí tus estilos CSS para pantallas grandes */
+
+  /* Form */
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: auto;
+    padding: 50px;
+    background-color: #ffffff;
+    border-radius: 20px;
+  }
+
+  .main-contact-form .contact-form_list input {
+    border: 0.1rem solid #bdbdbd;
+    border-radius: 0.5rem;
+    height: 3.5rem;
+    width: auto;
+    padding: 10px;
+    color: #000000;
+  }
+
+  .dual-input-container .dual-input input {
+    border: 0.1rem solid #bdbdbd;
+    border-radius: 0.5rem;
+    height: 3.5rem;
+    width: 100%;
+  }
+
+  input:focus,
+  input:active {
+    border: none;
+    outline: none;
+    background: none;
+  }
+
+  .main-contact-form button {
+    margin-top: 20px;
+    width: 97%;
+    height: 3.5rem;
+    border-radius: 0.5rem;
+    background-color: #33bbcf;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1.2rem;
+    border: none;
+  }
+
+  .contact-first-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .contact-second-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-left: 25px;
+  }
+
+  #contact-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-contact-form ul {
+    width: 100%;
+  }
+
+  /* Service card */
+
+  .card {
+    margin: 10px;
+    width: 40%;
+  }
+}
+
+@media (min-width: 1441px) {
+  /* Agrega aquí tus estilos CSS para pantallas muy grandes o de alta resolución */
+  .contact-second-container {
+    margin-left: 25px;
+  }
+}
