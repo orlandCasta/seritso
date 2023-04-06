@@ -307,6 +307,12 @@ input:active {
     width: 100%;
   }
 
+  .contact-form_list label,
+  .dual-input-container .dual-input p,
+  .dual-input-container .dual-input label {
+    font-size: 0.7rem;
+  }
+
   input:focus,
   input:active {
     border: none;
