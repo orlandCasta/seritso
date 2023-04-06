@@ -91,6 +91,13 @@
   }
 }
 
+/* Navbar */
+
+nav {
+  height: 75px;
+  min-height: 75px;
+}
+
 /* Seccion de servicios */
 
 .card {
@@ -378,6 +385,12 @@ input:active {
     border-radius: 0.5rem;
     height: 3.5rem;
     width: 100%;
+  }
+
+  .contact-form_list label,
+  .dual-input-container .dual-input p,
+  .dual-input-container .dual-input label {
+    font-size: 0.7rem;
   }
 
   input:focus,
