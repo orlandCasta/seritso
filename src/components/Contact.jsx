@@ -53,10 +53,6 @@ export const Contact = () => {
 
               if (!valores.user_email) {
                 errores.user_email = "El correo es obligatorio.";
-              } else if (
-                !/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(valores.user_email)
-              ) {
-                errores.user_email = "Campo inválido. Verifique estructura.";
               }
 
               if (!valores.company) {
