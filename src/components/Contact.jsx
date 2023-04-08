@@ -19,7 +19,10 @@ export const Contact = () => {
         id="contact-section"
         className={`${styles.flexCenter} ${styles.marginY} ${styles.padding} sm:flex-row flex-col rounded-[20px] box-shadow contact-section`}
       >
-        <div className="flex-1 flex flex-col contact-first-container">
+        <div
+          id="contact-first-container"
+          className="flex-1 flex flex-col contact-first-container"
+        >
           <h2 className={styles.heading2}>Cuéntanos como podemos ayudarte</h2>
           <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
             Nos pondremos en contacto contigo tan pronto nos sea posible,

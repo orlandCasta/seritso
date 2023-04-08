@@ -8,16 +8,19 @@ export const Hero = () => {
       className={`flex md:flex-row flex-col ${styles.paddingY}`}
     >
       <div
-        className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}
+        className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6 hero-section-info`}
       >
-        <div className="flex flex-row justify-between items-center w-full">
+        <div className="flex flex-row justify-between items-center w-full ">
           <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100.8px] leading-[75px]">
             Servicio y soporte <br className="sm:block hidden" />{" "}
             <span className="text-gradient">
               donde la eficacia y el profesionalismo{" "}
             </span>{" "}
           </h1>
-          <div className="ss:flex hidden md:mr-4 mr-0">
+          <div
+            id="getstarted"
+            className="ss:flex hidden md:mr-4 mr-0 getstarted"
+          >
             <GetStarted />
           </div>
         </div>
@@ -31,7 +34,7 @@ export const Hero = () => {
           planeando con expertos certificados en diversas marcas.
         </p>
       </div>
-      <div className={`ss:hidden ${styles.flexCenter}`}>
+      <div id="getstarted-2" className={`${styles.flexCenter} getstarted-2`}>
         <GetStarted />
       </div>
     </section>

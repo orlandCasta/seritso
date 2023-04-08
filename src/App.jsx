@@ -28,7 +28,7 @@ export const App = () => (
         <Services />
         <h2
           id="contact"
-          className={styles.heading2}
+          className={`${styles.heading2} contact-title`}
           style={{ textAlign: "center" }}
         >
           Contactanos

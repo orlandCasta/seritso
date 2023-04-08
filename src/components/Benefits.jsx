@@ -27,7 +27,7 @@ const FeatureCard = ({ icon, title, content, index }) => (
 export const Benefits = () => (
   <section id="benefits" className={layout.section}>
     <div className="absolute z-[0] w-[60%] h-[80%] -left-[50%] rounded-full blue__gradient bottom-40 flip-horizontal-top" />
-    <div className={layout.sectionInfo}>
+    <div className={`${layout.sectionInfo} footer-container-info`}>
       <h2 className={styles.heading2}>
         Administra tu negocio, <br className="sm:block hidden" /> Nosotros tu
         seguridad.

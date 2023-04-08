@@ -277,6 +277,33 @@ input:active {
 @media (max-width: 480px) and (min-width: 0px) {
   /* Agrega aquí tus estilos CSS para dispositivos móviles */
 
+  /* Hero */
+
+  .hero-section-info h1 {
+    font-size: 2.5rem;
+    line-height: 1.4;
+  }
+
+  .contact-first-container h2,
+  .contact-title,
+  .services-section-info h2,
+  .footer-container-info h2 {
+    font-size: 2.3rem;
+  }
+
+  #getstarted {
+    display: none;
+  }
+
+  #getstarted-2 {
+    margin-top: 60px;
+  }
+
+  /* Contact */
+  #contact-first-container {
+    padding: 100px;
+  }
+
   /* Form */
 
   form {
@@ -357,6 +384,16 @@ input:active {
 
 @media (min-width: 481px) and (max-width: 768px) {
   /* Agrega aquí tus estilos CSS para tablets */
+
+  /* Hero */
+
+  #getstarted {
+    display: none;
+  }
+
+  #getstarted-2 {
+    margin-top: 60px;
+  }
 
   /* Form */
 
@@ -445,6 +482,16 @@ input:active {
 @media (min-width: 769px) and (max-width: 1024px) {
   /* Agrega aquí tus estilos CSS para dispositivos pequeños o medianos */
 
+  /* Hero */
+
+  #getstarted {
+    display: none;
+  }
+
+  #getstarted-2 {
+    margin-top: 60px;
+  }
+
   /* Form */
 
   form {
@@ -530,6 +577,12 @@ input:active {
 
 @media (min-width: 1025px) and (max-width: 1280px) {
   /* Agrega aquí tus estilos CSS para pantallas medianas o grandes */
+
+  /* Hero */
+
+  #getstarted-2 {
+    display: none;
+  }
 
   /* Form */
 
@@ -623,6 +676,12 @@ input:active {
 @media (min-width: 1281px) and (max-width: 1440px) {
   /* Agrega aquí tus estilos CSS para pantallas grandes */
 
+  /* Hero */
+
+  #getstarted-2 {
+    display: none;
+  }
+
   /* Form */
 
   form {
@@ -710,6 +769,13 @@ input:active {
 
 @media (min-width: 1441px) {
   /* Agrega aquí tus estilos CSS para pantallas muy grandes o de alta resolución */
+
+  /* Hero */
+
+  #getstarted-2 {
+    display: none;
+  }
+
   .contact-second-container {
     margin-left: 25px;
   }
