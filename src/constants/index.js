@@ -73,15 +73,6 @@ export const footerLinks = [
       },
     ],
   },
-  {
-    title: "Otros",
-    links: [
-      {
-        name: "v1.0.2",
-        link: "https://www.hoobank.com/our-partner/",
-      },
-    ],
-  },
 ];
 
 export const clients = [

@@ -33,13 +33,12 @@ export const Benefits = () => (
         seguridad.
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        "Descubre las ventajas de elegirnos como tu aliado en soporte técnico.
+        Descubre las ventajas de elegirnos como tu aliado en soporte técnico.
         Nos distinguimos por nuestra rapidez, eficacia y atención personalizada.
         Nuestro equipo de expertos altamente capacitados está listo para
-        resolver tus problemas tecnológicos, ya sean de hardware o software, en
-        tiempo récord. No importa si eres un usuario particular o una empresa,
-        nosotros nos adaptamos a tus necesidades, ofreciendo tarifas
-        competitivas y garantía de satisfacción.
+        resolver tus problemas tecnológicos. No importa si eres un usuario
+        particular o una empresa, nosotros nos adaptamos a tus necesidades,
+        ofreciendo tarifas competitivas y garantía de satisfacción.
       </p>
       <Button styles={`mt-10`} />
     </div>

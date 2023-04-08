@@ -53,14 +53,10 @@ export const Contact = () => {
 
               if (!valores.user_email) {
                 errores.user_email = "El correo es obligatorio.";
-              }
-
-              if (!valores.company) {
-                errores.company = "El nombre de la compañia es obligatorio.";
-              }
-
-              if (!valores.country) {
-                errores.country = "El pais es obligatorio.";
+              } else if (
+                !/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(valores.user_email)
+              ) {
+                errores.user_email = "El correo escrito no es valido.";
               }
 
               return errores;
@@ -109,7 +105,12 @@ export const Contact = () => {
                       <label for="reason">
                         Tu reto/objetivo <span style={{ color: "red" }}>*</span>
                       </label>
-                      <Field type="text" id="message" name="message"></Field>
+                      <Field
+                        type="text"
+                        id="message"
+                        name="message"
+                        maxlength="500"
+                      ></Field>
                       <ErrorMessage
                         name="message"
                         component={() => (
@@ -127,6 +128,7 @@ export const Contact = () => {
                             type="text"
                             id="user_name"
                             name="user_name"
+                            maxlength="50"
                           ></Field>
                           <ErrorMessage
                             name="user_name"
@@ -145,6 +147,7 @@ export const Contact = () => {
                             type="text"
                             id="lastName"
                             name="lastName"
+                            maxlength="50"
                           ></Field>
                           <ErrorMessage
                             name="lastName"
@@ -168,6 +171,7 @@ export const Contact = () => {
                             type="email"
                             id="user_email"
                             name="user_email"
+                            maxlength="254"
                           ></Field>
                           <ErrorMessage
                             name="user_email"
@@ -184,6 +188,7 @@ export const Contact = () => {
                             type="text"
                             id="company"
                             name="company"
+                            maxlength="254"
                           ></Field>
                           <ErrorMessage
                             name="company"
@@ -198,7 +203,12 @@ export const Contact = () => {
                     </li>
                     <li>
                       <label for="country">Pais</label>
-                      <Field type="text" id="country" name="country"></Field>
+                      <Field
+                        type="text"
+                        id="country"
+                        name="country"
+                        maxlength="254"
+                      ></Field>
                       <ErrorMessage
                         name="country"
                         component={() => (
